@@ -10,3 +10,12 @@ services:
       - ASPNETCORE_ENVIRONMENT=development
     hostname: app
     restart: "no"
+  sdk:
+    image: mcr.microsoft.com/dotnet/sdk:5.0.404
+    command: [ "bash" ]
+    environment:
+      - ASPNETCORE_ENVIRONMENT=development
+    volumes:
+      - .:/work
+    hostname: sdk
+    restart: "no"
