@@ -1,0 +1,12 @@
+version: "3.3"
+services:
+  app:
+    image: timokluser-dev/gbs_m120-dotnetdocker
+    build:
+      context: .
+      dockerfile: Dockerfile
+      network: host
+    environment:
+      - ASPNETCORE_ENVIRONMENT=development
+    hostname: app
+    restart: "no"
