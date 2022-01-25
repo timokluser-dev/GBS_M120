@@ -1,6 +1,6 @@
 # https://hub.docker.com/_/microsoft-dotnet
 
-FROM mcr.microsoft.com/dotnet/sdk:5.0 AS builder
+FROM mcr.microsoft.com/dotnet/sdk:5.0.404 AS builder
 
 WORKDIR /build
 
